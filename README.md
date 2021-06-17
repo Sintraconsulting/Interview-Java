@@ -13,7 +13,7 @@ The application has to be stable.
 No skeleton is provided. Developer can provide any solution to proof his/her skills.
 
 ## Requirements
-User entity structure:
+User endpoint input structure:
 
 - email
 - lastname
