@@ -31,7 +31,7 @@ All fields optional can be null
 
 
 ## Scenario
-Given an identity card image with related hash application have to check it on insert/update
+Given an identity card image with related hash application have to check it before insert/update
 
 
 ## Expectations
