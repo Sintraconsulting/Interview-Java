@@ -35,11 +35,10 @@ Given an identity card image with related hash application have to check it on i
 
 
 ## Expectations
-The expectations are:
-
-Modelling needed entities
-Validating inputs
-Handling errors
-Saving the file everywhere you prefer (Keep in mind the storage provider could change)
-Highlighting complexities you have to cover
+The expectations are:  
+Modelling needed entities  
+Validating inputs  
+Handling errors  
+Saving the file everywhere you prefer (Keep in mind the storage provider could change)  
+Highlighting complexities you have to cover  
 Writing tests!
