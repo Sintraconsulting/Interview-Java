@@ -15,15 +15,15 @@ No skeleton is provided. Developer can provide any solution to proof his/her ski
 ## Requirements
 User entity structure:
 
-email
-lastname
-firstname
-fiscal code
-description (optional)
-last access date (optional)
-identity card number
-identity card image hash
-identity card (image)
+- email
+- lastname
+- firstname
+- fiscal code
+- description (optional)
+- last access date (optional)
+- identity card number
+- identity card image hash
+- identity card (image)
 
 ### NOTE:
 There cannot be more users with the same email or identity card number in the DB
