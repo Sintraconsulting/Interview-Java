@@ -1,0 +1,20 @@
+Per quanto riguarda gli oggetti ho utilizzato una classe:
+UserDto che rappresenta la risorsa utente e fa da ponte tra il FE ed il BE, ove 
+con l'ausilio javax.validation gestisco i controlli di validazione dei campi. 
+Per la tematica eccezioni ho utilizzato l'annotazione @ControllerAdvice per intercettare tutte le eccezioni generate all'interno del controller, 
+dove sotto la classe astratta BaseErrorHandlerController con l'annotazione @ExcpetionHandler mappo tutte le eccezioni gestite e non:
+MethodArgumentNotValidException --> per le validazione dei campi
+DuplicateValueException --> per mail o fiscal code già presenti
+CorruptImageException --> check integrità dell'immagine 
+Exception --> qualsiasi altra eccezione non prevista dalle logiche implementate (errore generico)
+
+Come BE ho optato dell'utilizzo di JPA Repository :
+Creazione Entity (UserEntity)
+Creazione interfaccia repository  che estende JpaRepository (con la definizione dei metodi necessari)
+Creazione intefaccia con i relativi metodi da utilizzare all'interno di una classe di servizio 
+Implementazione interfaccia prededente dove con l'@Autowired utilizzo i metodi definiti all'interno del Repository ed effettuo tutti i varic controlli
+richiesti e genero anche delle eccezioni in modo da rendere tutto trasparente al controller.
+
+Ho utilizzato lombok e mapstruct per mappare la classe Dto con la classe entiy e viceversa ed infine sotto scr/test/java ho inserito 
+gli unit test. 
+
